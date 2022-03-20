@@ -32,7 +32,6 @@ jobs:
       - name: ✍️ Create/update release
         uses: ncipollo/release-action@v1
         with:
-          tag: ${{ steps.changelog_reader.outputs.version }}
           name: Release ${{ steps.changelog_reader.outputs.version }}
           body: ${{ steps.changelog_reader.outputs.changes }}
           allowUpdates: true
