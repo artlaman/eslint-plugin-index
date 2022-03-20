@@ -1,3 +1,5 @@
+### [1.1.1](https://github.com/artlaman/eslint-plugin-index/compare/v1.1.0...v1.1.1) (2022-03-20)
+
 ## 1.1.0 (2022-03-20)
 
 ### Features
