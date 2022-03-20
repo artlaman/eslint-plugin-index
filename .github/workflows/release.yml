@@ -1,0 +1,39 @@
+name: release
+
+on:
+  push:
+    tags:
+      - 'v*.*.*'
+
+jobs:
+  release:
+    if: github.event.repository.fork == false
+
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: 🏷 Get version from tag
+        id: tag_name
+        run: echo ::set-output name=current_version::${GITHUB_REF#refs/tags/v}
+        shell: bash
+
+      - name: 🛒 Checkout repository
+        uses: actions/checkout@v2
+
+      - name: 📜 Get Changelog Entry
+        uses: artlaman/conventional-changelog-reader-action@v1.1.0
+        id: changelog_reader
+        with:
+          version: ${{ steps.tag_name.outputs.current_version }}
+
+      - name: ✍️ Create/update release
+        uses: ncipollo/release-action@v1
+        with:
+          tag: ${{ steps.changelog_reader.outputs.version }}
+          name: Release ${{ steps.changelog_reader.outputs.version }}
+          body: ${{ steps.changelog_reader.outputs.changes }}
+          allowUpdates: true
+          token: ${{ secrets.GITHUB_TOKEN }}
