@@ -7,9 +7,10 @@ ESlint rules to ensure the proper usage of index.js files
 
 ## Supported rules
 
-| rule                     | description                | recommended |
-| ------------------------ | -------------------------- | ----------- |
-| [`index/forbid`][forbid] | Forbid files named `index` | error       |
+| rule                                             | description                                            | recommended |
+| ------------------------------------------------ | ------------------------------------------------------ | ----------- |
+| [`index/only-import-export`][only-import-export] | Allow only import and export statements in index files | error       |
+| [`index/forbid`][forbid]                         | Forbid files named `index`                             | off         |
 
 ## Installation and usage
 
@@ -39,7 +40,8 @@ Then configure the rules you want to use under the rules section.
 {
   "plugins": ["index"],
   "rules": {
-    "index/forbid": "error"
+    "index/only-import-export": "error"
+    "index/forbid": "off"
   }
 }
 ```
@@ -53,4 +55,5 @@ Or start with the recommended rule set:
 }
 ```
 
+[only-import-export]: rules/only-import-export/only-import-export.md
 [forbid]: rules/forbid/forbid.md
