@@ -1,3 +1,10 @@
+### [1.1.2](https://github.com/artlaman/eslint-plugin-index/compare/v1.1.1...v1.1.2) (2022-04-05)
+
+
+### Bug Fixes
+
+* **utils:** `docsUrl` file name ([fd7be5c](https://github.com/artlaman/eslint-plugin-index/commit/fd7be5c4c8c0fe54d636f60c67fd3cd6e7efdd5a))
+
 ### [1.1.1](https://github.com/artlaman/eslint-plugin-index/compare/v1.1.0...v1.1.1) (2022-03-20)
 
 ## 1.1.0 (2022-03-20)
