@@ -39,7 +39,7 @@
     "eslint": "7 || 8"
   },
   "simple-git-hooks": {
-    "pre-commit": "yarn nano-staged"
+    "pre-commit": "npx nano-staged"
   },
   "nano-staged": {
     "*.{js,md}": "prettier --write"
