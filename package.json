@@ -33,7 +33,7 @@
     "simple-git-hooks": "^2.7.0"
   },
   "engines": {
-    "node": "^14 || ^16"
+    "node": "^14 || ^16 || ^17"
   },
   "peerDependencies": {
     "eslint": "7 || 8"
