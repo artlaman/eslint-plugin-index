@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-index",
-  "version": "1.1.3",
+  "version": "1.1.4",
   "description": "ESlint rules to ensure the proper usage of index.js files",
   "keywords": [
     "eslint",
