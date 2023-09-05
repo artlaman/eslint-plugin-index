@@ -5,6 +5,7 @@ module.exports = {
   },
   configs: {
     recommended: {
+      plugins: ["index"],
       rules: {
         "index/only-import-export": "error",
         "index/forbid": "off",
