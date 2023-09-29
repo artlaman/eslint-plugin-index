@@ -1,3 +1,10 @@
+### [1.1.6](https://github.com/artlaman/eslint-plugin-index/compare/v1.1.5...v1.1.6) (2023-09-29)
+
+
+### Features
+
+* included the plugin name in the recommended config ([#2](https://github.com/artlaman/eslint-plugin-index/issues/2)) ([885e891](https://github.com/artlaman/eslint-plugin-index/commit/885e891e20fd52aaad39463fadb3a2cc185059e2))
+
 ### [1.1.5](https://github.com/artlaman/eslint-plugin-index/compare/v1.1.3...v1.1.5) (2023-05-23)
 
 ### [1.1.4](https://github.com/artlaman/eslint-plugin-index/compare/v1.1.3...v1.1.4) (2022-12-16)
