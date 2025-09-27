@@ -21,7 +21,7 @@ jobs:
         shell: bash
 
       - name: 🛒 Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: 📜 Get Changelog Entry
         uses: artlaman/conventional-changelog-reader-action@v1.1.0

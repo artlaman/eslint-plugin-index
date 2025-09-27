@@ -22,21 +22,21 @@
     "access": "public"
   },
   "devDependencies": {
-    "clean-publish": "^4.0.2",
-    "conventional-changelog-cli": "^2.2.2",
+    "clean-publish": "^5.2.2",
+    "conventional-changelog-cli": "^4.1.0",
     "eslint": "^8.29.0",
     "eslint-plugin-eslint-plugin": "^5.0.6",
     "eslint-plugin-node": "^11.1.0",
-    "jest": "^29.3.1",
+    "jest": "^29.7.0",
     "nano-staged": "^0.8.0",
-    "prettier": "^2.8.1",
-    "simple-git-hooks": "^2.8.1"
+    "prettier": "^3.6.2",
+    "simple-git-hooks": "^2.13.1"
   },
   "engines": {
-    "node": "^14 || ^16 || ^17 || ^18 || ^19 || ^20 || ^21"
+    "node": "^14 || ^16 || ^17 || ^18 || ^19 || ^20 || ^21 || ^22 || ^23 || ^24"
   },
   "peerDependencies": {
-    "eslint": "7 || 8"
+    "eslint": "8 || 9"
   },
   "simple-git-hooks": {
     "pre-commit": "npx nano-staged"

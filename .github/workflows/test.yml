@@ -12,15 +12,48 @@ jobs:
 
     strategy:
       matrix:
-        eslint: [7, 8]
-        node-version: [14.x, 16.x, 17.x, 18.x, 19.x, 20.x, 21.x]
+          include:
+          # ESLint 8 with its supported Node.js versions
+          - eslint: 8
+            node-version: 14.x
+          - eslint: 8
+            node-version: 16.x
+          - eslint: 8
+            node-version: 17.x
+          - eslint: 8
+            node-version: 18.x
+          - eslint: 8
+            node-version: 19.x
+          - eslint: 8
+            node-version: 20.x
+          - eslint: 8
+            node-version: 21.x
+          - eslint: 8
+            node-version: 22.x
+          - eslint: 8
+            node-version: 23.x
+          - eslint: 8
+            node-version: 24.x
+          # ESLint 9 with its supported Node.js versions
+          - eslint: 9
+            node-version: 18.x
+          - eslint: 9
+            node-version: 20.x
+          - eslint: 9
+            node-version: 21.x
+          - eslint: 9
+            node-version: 22.x
+          - eslint: 9
+            node-version: 23.x
+          - eslint: 9
+            node-version: 24.x
 
     steps:
       - name: 🛒 Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: ✨ Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
           cache: 'npm'
